@@ -1,31 +1,18 @@
-/* If ages of Ram, Shaym and Ajay are input through the keyboard write a program to determine the 
-youngest of the three*/
-
 #include<stdio.h>
+#include<math.h>
+
 int main()
 {
-    int r,s,a;
-    int st1;
-    printf("Please enter Ram, Shyam and Ajay age: ");
-    scanf("%d %d %d",&r,&s,&a);
+    float x,y,r,t;
 
-    if(r<s)
-    {
-        if(r<a)
-        {
-           printf("Ram is YOnger");     
-        }
-    }
-    
-if (s<r)
-    {
-        if(s<a)
-        printf("Shayam is younger");
-        else 
-    {
-        printf("Ajay is younger");
-    }
-    }
-    
-       
-}   
+    printf("Please Enter Cartesian Co-ordinate for X: ");
+    scanf("%f",&x);
+    printf("Please Enter Cartesian Co-ordinate for y: ");
+    scanf("%f",&y);
+
+    r=sqrt(x*x+y*y);
+    t= atan2(y,x); 
+    printf("r= %f  t= %f\n",r,t);
+    return 0;
+}
+
