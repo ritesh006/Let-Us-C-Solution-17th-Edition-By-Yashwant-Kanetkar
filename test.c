@@ -3,16 +3,18 @@
 
 int main()
 {
-    float x,y,r,t;
+    int c,d;
+    printf("Please Enter First location: ");// Taking first location  
+    scanf("%d",&c);// c= first location
 
-    printf("Please Enter Cartesian Co-ordinate for X: ");
-    scanf("%f",&x);
-    printf("Please Enter Cartesian Co-ordinate for y: ");
-    scanf("%f",&y);
+    printf("Please Enter Second Location : ");// Taking Second Location 
+    scanf("%d",&d);// d = second Location 
+    
+    int temp = c ;
+    c = d ;
+    d = temp ;
+    printf("c = %d  d = %d ",c,d);//printing interchange content  
 
-    r=sqrt(x*x+y*y);
-    t= atan2(y,x); 
-    printf("r= %f  t= %f\n",r,t);
     return 0;
 }
 
