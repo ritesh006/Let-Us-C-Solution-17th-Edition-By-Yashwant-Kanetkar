@@ -305,4 +305,143 @@ SOLUTION:
     }
 
 
+(b)  Write a program to receive Cartesian co-ordinates (x, y) 
+     of a point and convert them into polar co-ordinates. 
+
+SOLUTION: 
+
+    #include<stdio.h>
+    #include<math.h>
+
+    int main()
+    {
+        float x,y,r,t;
+
+        printf("Please Enter Cartesian Co-ordinate for X: ");
+        scanf("%f",&x);
+        printf("Please Enter Cartesian Co-ordinate for y: ");
+        scanf("%f",&y);
+
+        r=sqrt(x*x+y*y);
+        t= atan2(y,x); 
+        printf("r= %f  t= %f\n",r,t);
+        return 0;
+    }
+
+
+
+(C)Write a program to receive values of latitude (L1, L2) and
+longitude (G1, G2), in degrees, of two places on the earth and
+outputs the distance between them in nautical miles. The
+formula for distance in nautical miles is:
+D = 3963 acos ( sin L1 sin L2 + cos L1cos L2 * cos ( G2 – G1 )
+
+SOLUTION:
+
+    #include<stdio.h>
+    #include<math.h>
+
+    int main()
+    {
+        float L1,L2,G1,G2;
+
+        printf("Please Enter Lattitude Co-ordinate (L1,L2): ");
+        scanf("%f %f",&L1,&L2);
+        printf("Please Enter Longitude Co-ordinate for (G1,G2): ");
+        scanf("%f %f",&G1,&G2);
+        L1 = L1 * 3.14 / 180 ;
+        L2 = L2 * 3.14 / 180 ;
+        G1 = G1 * 3.14 / 180 ;
+        G2 = G2 * 3.14 / 180 ;
+
+        float D = 3963 * acos(sin(L1)*sin(L2)+cos(L1)*cos(L2)*cos(G2-G1));
+        printf("Distance in Nautical miles is= %f",D);
+        return 0;
+    }
+
+
+
+(d) Wind chill factor is the felt air temperature on exposed skin
+due to wind. The wind chill temperature is always lower than
+the air temperature, and is calculated as per the following
+formula:
+wcf = 35.74 + 0.6215t + ( 0.4275t – 35.75 ) * v0.16
+where t is the temperature and v is the wind velocity. Write a
+program to receive values of t and v and calculate wind chill
+factor.
+
+SOLUTION:
+
+        #include<stdio.h>
+        #include<math.h>
+
+        int main()
+        {
+            float t,v,wcf;
+            printf("Please Enter Temprature: ");// Enter temprature in Degree
+            scanf("%f",&t);//t= temprature
+            printf("Please Enter Air Velocity: ");//Enter Air Velocity 
+            scanf("%f",&v);// v= velocity 
+            wcf = 35.74 + 0.6215 * t + (0.4275 * t - 35.75) * pow(v , 0.16);
+            // calculate wind chill factor
+            printf("Wind Chill Factor is: %0.2f",wcf);//print wind chill factor 
+
+            return 0;
+        }
+
+
+(e) If value of an angle is input through the keyboard, write a
+program to print all its Trigonometric ratios.
+
+
+SOLUTION:
+
+
+        # include <stdio.h>
+        # include <math.h>
+        int main( )
+        {
+            float angle, s, c, t ;
+            printf ( "\nEnter an angle: " ) ;
+            scanf ( "%f", &angle ) ;
+            /* convert angle to radians */
+            angle = angle * 3.14 / 180 ;
+            s = sin ( angle ) ;
+            c = cos ( angle ) ;
+            t = tan ( angle ) ;
+            printf ( "sin = %f cos = %f tan = %f\n", s, c, t ) ;
+            return 0 ;
+        }
+
+
+
+(f) Two numbers are input through the keyboard, write a program to print
+    all its Trigonometic ratios.
+
+
+SOLUTION: 
+
+        #include<stdio.h>
+        #include<math.h>
+
+        int main()
+        {
+            int c,d;
+            printf("Please Enter First location: ");// Taking first location  
+            scanf("%d",&c);// c= first location
+
+            printf("Please Enter Second Location : ");// Taking Second Location 
+            scanf("%d",&d);// d = second Location 
+            
+            int temp = c ;
+            c = d ;
+            d = temp ;
+            printf("c = %d  d = %d ",c,d);//printing interchange content  
+
+            return 0;
+        }
+
+
+
+
     
