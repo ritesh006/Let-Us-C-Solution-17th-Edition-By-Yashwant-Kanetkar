@@ -1,20 +1,13 @@
-#include<stdio.h>
-#include<math.h>
-
+# include <stdio.h>
 int main()
 {
-    int c,d;
-    printf("Please Enter First location: ");// Taking first location  
-    scanf("%d",&c);// c= first location
+    float temp;
+    printf("Enter Temprature in Fahrenheit: ");
+    scanf("%f",&temp);
 
-    printf("Please Enter Second Location : ");// Taking Second Location 
-    scanf("%d",&d);// d = second Location 
-    
-    int temp = c ;
-    c = d ;
-    d = temp ;
-    printf("c = %d  d = %d ",c,d);//printing interchange content  
+    float degree = (temp - 32) * 5/9;
+
+    printf("Your Tempreture in Degree is: %0.2f",degree);
 
     return 0;
 }
-
