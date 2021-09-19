@@ -1,13 +1,11 @@
-# include <stdio.h>
+#include<stdio.h>
+
 int main()
 {
-    float temp;
-    printf("Enter Temprature in Fahrenheit: ");
-    scanf("%f",&temp);
-
-    float degree = (temp - 32) * 5/9;
-
-    printf("Your Tempreture in Degree is: %0.2f",degree);
-
+    int a=300,b,c;
+    if(a>=400)
+        b=300;
+    c=200;
+    printf("%d %d\n",b,c);
     return 0;
 }
