@@ -1,49 +1,49 @@
-# [A] 
+# [A] Which of following is invalid C constant and why?
 
-'3.15' = invalid constant decimal point available
-35,550 = invalid constant comm is available 
-3.25e2 = valid constant 
-2e-3 = valid constant.
-eLearning = Invalid constant beacause its not single digit
-"show" = invalid constant because of inverted commm
-'quest' = Invalid constant beacause its not single digit 
-2^3 = invalid constant not a right way to wright exponential constant
-4 6 5 2 = invalid due to spaces
+'3.15' = invalid constant decimal point available 
+35,550 = invalid constant comm is available  
+3.25e2 = valid constant  
+2e-3 = valid constant. 
+eLearning = Invalid constant beacause its not single digit 
+"show" = invalid constant because of inverted commm 
+'quest' = Invalid constant beacause its not single digit  
+2^3 = invalid constant not a right way to wright exponential constant 
+4 6 5 2 = invalid due to spaces 
+ 
+
+# [B] Which of the following are invalid variable names and why?
+
+B'day       = invald quote not allowed 
+int         = invalid int is data type 
+$hello      = invalid special charactor not allowed 
+#HASH       = invalid special charactor not allowed 
+dot.        = ivalid full stop not allowd  
+number      = valid  
+totalArea   = valid 
+_main()     = invalid main is function 
+temp_in_Deg = valid 
+total%      = invalid special charactor not allowed 
+1st         = invalid starting with number not allowed 
+sttack-queue= invalid dash is not allowed 
+variable name= space is not allowed 
+%name%      = invalid special charactor not allowed 
+salary      = valid 
 
 
-# [B] 
+# [C] State whether the following statements are True or False:
 
-B'day = invald quote not allowed
-int = invalid int is data type
-$hello= invalid special charactor not allowed
-#HASH= invalid special charactor not allowed
-dot.= ivalid full stop not allowd 
-number= valid
-totalArea = valid
-_main()= invalid main is function
-temp_in_Deg= valid
-total%= invalid special charactor not allowed
-1st= invalid starting with number not allowed
-sttack-queue= invalid dash is not allowed
-variable name= space is not allowed
-%name% = invalid special charactor not allowed
-salary = valid
-
-
-# [C]
-
-(a) T
-(b) T
-(c) T
-(d) T
-(e) T
-(f) T
-(g) T
-(h) T
-(i) T
-(j) F
-(k) T
-(i) F
+(a) T 
+(b) T 
+(c) T 
+(d) T 
+(e) T 
+(f) T 
+(g) T 
+(h) T 
+(i) T 
+(j) F 
+(k) T 
+(i) F 
 
 
 # [D] Match the Following:
@@ -67,51 +67,51 @@ salary = valid
 
 (a)
 
-    int main()
-    {
-    int a, float b, int c;
-    a=25; b=3.24; c= a + b * b - 35;
-    }
+    int main() 
+    { 
+    int a, float b, int c; 
+    a=25; b=3.24; c= a + b * b - 35; 
+    } 
 
-ANSWER: No Error
-
-
-(b)
-
-    #include<stdio.h>
-    int main()
-    {
-        int a=35; float b = 3.24;
-        printf("%d%f%d",a,b+1.5,235);
-    }
-
- ANSWER: No Error
+ANSWER: No Error 
 
 
-(c)
+(b) 
 
-    #include<stdio.h>
-    int main()
-    {
-        int a,b,c;
-        scanf("%d%d%d",a,b,c);
-    }
+    #include<stdio.h> 
+    int main() 
+    { 
+        int a=35; float b = 3.24; 
+        printf("%d%f%d",a,b+1.5,235); 
+    } 
+
+ ANSWER: No Error 
+
+
+(c) 
+
+    #include<stdio.h> 
+    int main() 
+    { 
+        int a,b,c; 
+        scanf("%d%d%d",a,b,c); 
+    } 
     
-ANSWER: & Identifer is missing in Scanf function.
+ANSWER: & Identifer is missing in Scanf function. 
 
 
-(d)
+(d) 
 
-    #include<stdio.h>
-    int main()
-    {
-        int m1,m2,m3
-        printf("Enter value of marks in 3 subjects")
-        scanf("%d%d%d",m1.m2,m3)
-        printf("You Entered %d %d %d",m1,m2,m3)
-    }
-
-ANSWER: Semicolun is missing in all statements.
+    #include<stdio.h> 
+    int main() 
+    { 
+        int m1,m2,m3 
+        printf("Enter value of marks in 3 subjects") 
+        scanf("%d%d%d",m1.m2,m3) 
+        printf("You Entered %d %d %d",m1,m2,m3) 
+    } 
+ 
+ANSWER: Semicolun is missing in all statements. 
 
 
 
@@ -119,21 +119,21 @@ ANSWER: Semicolun is missing in all statements.
 
 (a) Temperature of a city in Fahrenheit degrees is input through
 the keyboard. Write a program to convert this temperature
-into Centigrade degrees.
+into Centigrade degrees. 
 
 SOLUTION: 
-    # include <stdio.h>
-    int main()
+    # include <stdio.h> 
+    int main() 
     {
-        float temp;
-        printf("Enter Temprature in Fahrenheit: ");
-        scanf("%f",&temp);
+        float temp; 
+        printf("Enter Temprature in Fahrenheit: "); 
+        scanf("%f",&temp); 
 
-        float degree = (temp - 32) * 5/9;
+        float degree = (temp - 32) * 5/9;  
 
-        printf("Your Tempreture in Degree is: %f",degree);
+        printf("Your Tempreture in Degree is: %f",degree); 
 
-        return 0;
+        return 0; 
     }
 
 
@@ -214,4 +214,4 @@ SOLUTION:
 
 
 
--------------------------END-----------------------
+-------------------------END---------------------------
