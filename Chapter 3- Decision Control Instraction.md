@@ -230,8 +230,41 @@ Answer: True
 
 # [F] Attempt the following questions:
 
-(a)
-/* If ages of Ram, Shaym and Ajay are input through the keyboard write a program to determine the 
+(a) A five-digit number is entered throught the keyboard. Write a 
+program to obtain the reversed number and to determine whether the 
+original and reversed numbers are equal or not.
+
+    #include<stdio.h>
+
+    int main()
+    {
+        int num,a,b,c,d,e,x;
+
+        printf("Enter a five digit number : ");
+        scanf("%d", &num);
+
+        //separating digits of the number
+        e = num % 10;
+        d = (num/10) % 10;
+        c = (num/100) % 10;
+        b = (num/1000) % 10;
+        a = (num/10000);
+
+        //reversing the number
+        x = e*10000 + d*1000 + c*100 + b*10 + a;
+        printf("\n%d", x);
+
+        if(x == num)
+            printf("\n\nThe reverse of the number %d is same as actual number.", num);
+
+
+        return 0;
+    }
+
+
+
+
+(b) /* If ages of Ram, Shaym and Ajay are input through the keyboard write a program to determine the 
 youngest of the three*/
 
     #include<stdio.h>
@@ -261,3 +294,58 @@ youngest of the three*/
             
             
     }   
+
+
+(c) Write a program to check whether a triangle is valid or not, when
+the three angles of the triangle arre entered through the keyboard.
+A triangle is valid if the sum of all the three angles is equal to 
+180 degrees.
+
+    #include<stdio.h>
+
+    int main()
+    {
+        int a, b, c;                            // three variable for three angles
+
+        printf("Enter three angles: ");         //message for user
+        scanf("%d %d %d",&a,&b,&c);             //taking input from user 
+
+        c=a+b+c;                                // Addition of three variable
+
+        if (c == 180)                           // Taking decision if triangle is valid or not
+        {
+            printf("Triangle is Valid and Total Degree is: %d",c);
+        }
+
+        else
+        {
+            printf("Triangle is Not Valid and Total Degree is: %d",c);
+        }
+        
+        return 0;
+    }
+
+
+(d) Write a program to find the absolute value of a number entered
+    through the keyboard.
+
+    #include<stdio.h>
+    int main()
+    {
+        int num,ans;                                // Declare Variable
+
+        printf("Enter Number: ");                   // Message for user
+        scanf("%d",&num);                           // Taking input from user
+        ans = num;
+        if (num > 0)                                // Taking decision if num greater than zero
+        {
+            printf("Absolute Value of %d is: %d",num,num);  // Print absolute value equal to num var
+        }
+        else                                         // Else num less than zero                        
+        {
+            num = num * -1;                       // Calculation for getting positive number
+            printf("Absolute Value of is: %d\n",num);// Print absolute value of negative value 
+        }
+
+        return 0;
+    }
