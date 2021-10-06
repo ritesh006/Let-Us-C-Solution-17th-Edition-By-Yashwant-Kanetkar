@@ -205,25 +205,25 @@ Answer: True
 
 # [D]  Match the following pairs
 
-(a) Multiple statements                -   (5) {}    
-(b) else block                         -   (4) optional        
-(c) ;                                  -   (7) Null statement    
-(d) <> <= >= == !=                     -   (3) Relational operator  
-(e) ==                                 -   (2) Comparison Operator  
-(f) + - * / %                          -   (6) Arithmatic operator   
-(g) =                                  -   (1) Assignment operator       
-(h) Default Control instruction        -   (9) Sequence          
-(i) Decision Control instruction       -   (8) if - else      
+(a) Multiple statements                 -   (5) {}    
+(b) else block                          -   (4) optional        
+(c) ;                                   -   (7) Null statement    
+(d) <> <= >= == !=                      -   (3) Relational operator  
+(e) ==                                  -   (2) Comparison Operator  
+(f) + - * / %                           -   (6) Arithmatic operator   
+(g) =                                   -   (1) Assignment operator       
+(h) Default Control instruction         -   (9) Sequence          
+(i) Decision Control instruction        -   (8) if - else      
 
 
 
 # [E] Which of the following are valid ifs:
 
-(a) if(-25) 
-(b) if(3.14)    
-(c) if(a)   
-(d) if(a+b) 
-(e) if(a>=b)    
+(a) if(-25)  
+(b) if(3.14)        
+(c) if(a)      
+(d) if(a+b)  
+(e) if(a>=b)        
 
 
 
