@@ -349,3 +349,47 @@ A triangle is valid if the sum of all the three angles is equal to
 
         return 0;
     }
+
+
+(e) Given the length and breadth of a rectangle, write a program to find whether the  area of the rectangle is greater than its perimeter. For example, the area of the 
+rectangle with length = 5 and breadth = 4 is greater than its perimeter.
+
+
+    #include<stdio.h>
+
+    int main()
+    {   
+        // Intialise Variable for length and breadth
+        int length, breadth, perimeter, area; 
+
+        //Message for user
+        printf("Enter Length of Triangle: ");
+        // Taking Input length from user
+        scanf("%d",&length);
+
+        // Message for user 
+        printf("Enter Breadth of Triangle: ");
+        // Taking Input Breadth from user
+        scanf("%d",&breadth);
+
+        //Calculating Perimeter
+        perimeter = 2*(length + breadth);
+
+        //Calculating Area
+        area = length * breadth;
+
+        // Comparing Area and Perimeter
+        if (area > perimeter)
+        {
+        printf("Area of Triangle Greater Than its Perimeter");
+        }
+        else
+        {
+        printf("Area of Triangle Greater Than its Perimeter");
+        }
+        return 0;
+    }
+
+
+(f) Givern three points (x1,x2), (x2,x2), (x3,x3) write a program to check if all 
+    the three points fall on on straight line.
