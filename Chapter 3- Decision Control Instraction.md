@@ -428,4 +428,42 @@ rectangle with length = 5 and breadth = 4 is greater than its perimeter.
 
 (g) Given the co-ordinates (x,y) of center of a circle and its radious, write a 
     program that will determine whether a point lies inside the circle, on the 
-    circle of outside the circle.  (Hint: Use sqrt() and pow() functions)
+    circle or outside the circle.  (Hint: Use sqrt() and pow() functions)
+
+
+    #include<stdio.h>
+    #include<math.h>
+
+    int main()
+    {
+        double x, y, r, cp;                      // Initialise variable
+
+        printf("Enter Point X and Y: ");         // Message for User 
+        scanf("%lf %lf", &x, &y);                // Taking input from user 
+
+        printf("Enter Radious of Circle: ");     // Message for user 
+        scanf("%ld", &r);
+
+        cp = sqrt(pow(x, 2) + pow(y, 2));        // Calculating circle point 
+
+        if (cp == r)                             // If cp equal to r point on circle
+        {
+        printf("Point Lies on The Cirle.");
+        }
+
+        else if (cp > r)                       // If cp greater than r point outside the circle
+        {
+            printf("Point Lies Outside The Cirle.");
+        }
+
+            else if (cp > r)                     // If cp less than r point insdie the circle 
+            {
+                printf("Point Lies Inside The Cirle.");
+            }
+
+
+        return 0;
+    }
+
+
+    
