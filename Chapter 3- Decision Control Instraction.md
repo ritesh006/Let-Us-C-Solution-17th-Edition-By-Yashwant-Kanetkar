@@ -466,4 +466,37 @@ rectangle with length = 5 and breadth = 4 is greater than its perimeter.
     }
 
 
-    
+
+(h) Given a point (x,y) write a program to find out if it lies on the X-axis, Y-axis
+    or on the origin.
+
+
+    #include<stdio.h>
+
+    int main()
+    {
+        int x, y;                                         // Initialise variable
+
+        printf("Enter X and Y Point: ");                  // Message for user
+        scanf("%d %d", &x, &y);                           // Taking input from user
+
+    if(x == 0 & y == 0)                                // If x and y equal to 0 point lies on the origin
+    {
+        printf("The point lies on the origin.");
+    }
+        else if (x == 0 & y > 0)                        // If x equal to zero and y is greater than zero
+        {
+            printf("The point lies on the Y-Axis");      // Point lies on the Y axis
+        }
+            else if (y == 0 & x >0)                      // If Y equal to zero and x is greater than zero
+            {
+                printf("The point lies on the X-Axis");   // Point lies on the X axis
+            }
+            
+
+        return 0;
+    }
+
+
+
+        
