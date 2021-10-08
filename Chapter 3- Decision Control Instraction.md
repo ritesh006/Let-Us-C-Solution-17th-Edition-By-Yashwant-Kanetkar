@@ -391,5 +391,41 @@ rectangle with length = 5 and breadth = 4 is greater than its perimeter.
     }
 
 
-(f) Givern three points (x1,x2), (x2,x2), (x3,x3) write a program to check if all 
+(f) Givern three points (x1,y1), (x2,y2), (x3,y3) write a program to check if all 
     the three points fall on on straight line.
+
+
+    #include<stdio.h>
+
+    int main()
+    {
+        int x1,x2,x3,y1,y2,y3,m,n;           // Initialise Variable
+
+        printf("Enter X1 and Y1 points: "); // Message for user
+        scanf("%d%d",&x1,&y1);              // Taking x1 y1 input from user
+
+        printf("Enter X2 and Y2 points: "); // Message for user
+        scanf("%d%d",&x2,&y2);              // Taking x2 y2 input from user
+
+        printf("Enter X3 and Y3 points: "); // Message for user
+        scanf("%d%d",&x3,&y3);              // Taking x3 y3 input from user
+
+        m = (y2-y1)/(x2-x1);                // Calculating first slope
+
+        n = (y3-y2)/(x3-x1);                // Calculating Second slope
+
+
+        if (m==n)                           // If M equal to N then all three point will be on same line 
+        {
+        printf("All Three point fall on straight line");
+        }
+        else                                  // Else they do not lie on sam line
+        printf("All point not fall on straight line");
+        return 0;
+    }
+
+
+
+(g) Given the co-ordinates (x,y) of center of a circle and its radious, write a 
+    program that will determine whether a point lies inside the circle, on the 
+    circle of outside the circle.  (Hint: Use sqrt() and pow() functions)
