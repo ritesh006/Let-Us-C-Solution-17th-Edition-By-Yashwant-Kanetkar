@@ -230,9 +230,7 @@ Answer: True
 
 # [F] Attempt the following questions:
 
-(a) A five-digit number is entered throught the keyboard. Write a 
-program to obtain the reversed number and to determine whether the 
-original and reversed numbers are equal or not.
+(a) A five-digit number is entered throught the keyboard. Write a program to obtain the reversed number and to determine whether the original and reversed numbers are equal or not.
 
     #include<stdio.h>
 
@@ -264,8 +262,7 @@ original and reversed numbers are equal or not.
 
 
 
-(b) /* If ages of Ram, Shaym and Ajay are input through the keyboard write a program to determine the 
-youngest of the three*/
+(b) /* If ages of Ram, Shaym and Ajay are input through the keyboard write a program  to determine the  youngest of the three*/
 
     #include<stdio.h>
     int main()
@@ -496,7 +493,57 @@ rectangle with length = 5 and breadth = 4 is greater than its perimeter.
 
         return 0;
     }
+    
 
+
+(i) According to Gregorian calendar, it was Monday on the date 01/01/01. If any year 
+    is input through the keyboard write a program to find out what is the day on 1st
+    January of this year.
+
+
+    #include <stdio.h>
+
+    int main ()
+    {
+    int year,days,d;
+
+    printf("year?"); scanf("%d",&year);
+
+    days = 365*year + (year-1)/4 - (year-1)/100 + (year-1)/400 ;
+
+    d=days%7;//to find which day of week
+
+    if(d==1)
+    {
+        printf("\n\n\tmonday");
+    }
+        else if(d==2)
+        {
+            printf("\n\n\ttuesday");
+        }
+            else if(d==3)
+            {
+             printf("\n\n\twednesday");
+            }
+                else if(d==4)
+                {
+                    printf("\n\n\tthursday");
+                }  
+                    else if(d==5)
+                    {
+                        printf("\n\n\tfriday");
+                    }
+                        else if(d==6)
+                        {
+                            printf("\n\n\tsaturday");
+                        }
+                            else if(d==0)
+                            {
+                                printf("\n\n\tsunday");
+                            }  
+    return(0);
+
+    }
 
 
         
