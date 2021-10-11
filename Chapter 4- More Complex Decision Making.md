@@ -385,3 +385,56 @@ Ideal                   18.6 to 24.9
 Overweight              25   to 25.9    
 Obese                   30   to 30.9    
 Morbidly Obese          >= 40   
+
+
+# include <stdio.h>
+
+int main()
+{
+  float inputWeight, inputHeight, BMI;        /* Initialise variable for weight and height */
+
+  printf("Enter Weight in KiloGram: ");     /* Message for user */
+  scanf("%f",&inputWeight);                  /* Taking input from user */
+
+  printf("Enter Height in Meter: ");        /* Message for user */
+  scanf("%f",&inputHeight);                  /* Taking input from user */
+
+ BMI = (inputWeight/(inputHeight*inputHeight)); /* Calculating Body Mass Index */
+
+ printf("Your BMI is : %0.1f ",BMI);
+
+  if (BMI <= 15)
+  {
+    printf("Starvation");
+  }
+    else if (BMI >= 15.1 && BMI <= 17.5)
+    {
+      printf("Anorexic");
+    }
+      else if (BMI > 17.6 && BMI <= 18.5)
+      {
+        printf("Underweight");
+      }
+        else if (BMI > 18.6 && BMI <= 24.9 )
+        {
+          printf("Ideal");
+        }
+          else if (BMI > 25 && BMI < 29.9 )
+          {
+            printf("OverWeight");
+          }
+            else if (BMI > 30 && BMI < 30.9 )
+            {
+              printf("Obese");
+            }
+              else if (BMI > 40 )
+              {
+                printf("Mobidly Obese");
+              }
+
+
+
+
+
+   return 0;
+}
