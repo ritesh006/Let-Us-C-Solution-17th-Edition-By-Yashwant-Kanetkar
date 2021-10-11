@@ -326,8 +326,8 @@ program:
 
     int main()
     {  
-    int input_Hardness, input_TensileStrength;                /* Initialise Variable */
-    float input_Carbon;
+         int input_Hardness, input_TensileStrength;                /* Initialise Variable */
+        float input_Carbon;
     
     printf("Enter Hardness of the Steel: ");                  /* Message for user */
     scanf("%d",&input_Hardness);                              /* Taking input from user */
@@ -438,3 +438,45 @@ Morbidly Obese          >= 40
 
     return 0;
     }
+
+
+
+# [E] Attempt the following questions:
+
+(a) Using conditional operators determine:
+    (1) Whether the character entered through the keyboard is a lower case alphabet
+        or not.
+    (2) Whether a character entered through the keyboard is a special symbol or not.
+
+    # include <stdio.h>
+
+    int main()
+    {    
+    char input_Char;  /* initialise variable */
+
+    printf("Enter Character: ");
+    scanf("%c",&input_Char);
+
+    if(input_Char >= 97 && input_Char <= 122)
+    {
+        printf("Your Input Character is Lower Case.");
+    } 
+        else if(input_Char >= 65 && input_Char <= 90)
+        {
+            printf("Yout Input Character is Upper Case.");
+        }
+            else if(input_Char >=33 && input_Char <= 47 && input_Char || input_Char >= 58 && input_Char <= 64 || input_Char <=91 && input_Char >=96)
+            {
+                printf("Your Input Character is Special Character.");
+            }
+                else if (input_Char >= 123 && input_Char <=126)
+                {
+                    printf("Your Input Character is Special Character.");
+                }
+
+    return 0;
+    }
+
+
+(b) Write a program using conditional operators to determine whether a year entered 
+    through the keyboard is a special symbol or not.
