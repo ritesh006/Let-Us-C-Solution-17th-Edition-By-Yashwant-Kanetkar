@@ -245,3 +245,80 @@ program:
 
         return 0;
     }
+
+
+
+(b) In digital world colors are specified in Red-Green-Blue (RGB) format, with values
+    or R, G, B varying on an integer scale from 0 to 255. In print publishing the colors are mentioned in Cyan-Magent-Yellow-Black (CMYK) format, with values of C,
+    M, Y, and K varying on a real scale from 0.0 to 1.0. Write a program that converts RGB color to CMYK color as per following formula.
+
+    While = Max(Red/255, Green/255, Blue/255)
+    Cyan = (White-Red/255)/(White)
+    Magenta = (White-Green/255)/(White)
+    Yellow = (White-Blue/255)/(White)
+    Black = 1-White
+    Note that of the RGB values are all 0, then the CMY values are all 0 and the K value is 1.
+
+
+    # include <stdio.h>
+
+    int main()
+    {
+    float Input_red, Input_green, Input_blue, white, cyan, magenta, yellow, black;
+    /* Initialise variable */
+    float cal_red, cal_green, cal_blue;
+    printf("Enter Value of Red (0 to 255):  ");    /* Message for User */
+    scanf("%f",&Input_red);                              /* Taking input from user decimal range 0 to 255*/                   
+
+    printf("Enter Value of Green (0 to 255):  ");          /* Message for User */
+    scanf("%f",&Input_green);                             /* Taking input from user decimal range 0 to 255*/                   
+    
+
+    printf("Enter Value of Blue (0 to 255):  ");             /* Message for User */
+    scanf("%f",&Input_blue);                                /* Taking input from user decimal range 0 to 255*/
+
+    cal_red = Input_red / 255;                               /*Calculating value of red */
+    cal_green = Input_green / 255;                           /* Calculating value of green */
+    cal_blue = Input_blue / 255;                             /* Calculating value of blue */
+    
+    white = cal_red;
+    
+    if (white < cal_green)
+    {
+        white = cal_green;
+    }
+        else if (white < cal_blue)
+        {
+            white = cal_blue;
+        }
+    
+    cyan = (white - cal_red)/white;                       /* Calculating value Cyan*/
+    magenta = (white - cal_green)/white;                  /* Calculating value Magenta*/
+    yellow = (white - cal_blue)/white;                    /* Calculating value of Yellow */
+    black =  1 - white;                                   /* Calculating value of Black */
+
+
+    printf("Cyan is: %0.2f \n",cal_red);
+    printf("Magenta is: %0.2f \n",magenta);
+    printf("Yellow is: %0.2f \n",yellow);
+    printf("Black is: %0.2f \n",black);
+    
+    return 0;
+    }
+
+
+
+(c) A certain grade of steel is graded according to the following conditions:
+
+    Hardness must be greater than 50
+    Carbon content must be less than 0.7
+    Tensile strength must be greater than 5600
+    The grades are as follows:
+    Grade is 10 if all three conditions are met
+    Grade is 9 if conditions (i) and (ii) are met
+    Grade is 8 if conditions (ii) and (iii) are met
+    Grade is 7 if conditions (i) and (iii) are met
+    Grade is 6 if and only one conditions is met
+    Grade is 5 is none of the conditions are met
+
+    Write a c program, which will require the user to give value of hardness, carbon content and tensile strength of the steel under consideration and output the grade of the steel. 
