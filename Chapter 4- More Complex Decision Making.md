@@ -347,28 +347,40 @@ program:
         else if (input_Hardness > 50 && input_Carbon < 0.7)
         {
             /* Comparing first 2 conditions for Grade 9 */
-        printf("First Two Conditon are meet with requirement so grade of the steel is 9.");
+          printf("First Two Conditon are meet with requirement so grade of the steel is 9.");
         }
-        else if (input_Carbon < 0.7 && input_TensileStrength > 5600)
-        {
-            /* Comparing 2nd and 3rd condition for Grade 8 */
-            printf("Second and Third condition are meet with requirement so grade of the steel is 8.");
-        }
-            else if (input_Hardness > 50 && input_TensileStrength > 5600)
+            else if (input_Carbon < 0.7 && input_TensileStrength > 5600)
             {
-            /* Comparing 1st and 3rd conditio for grade 7 */
-            printf("First and Third condition are meet with requirement so grade of the steel is 7.");
+                /* Comparing 2nd and 3rd condition for Grade 8 */
+                printf("Second and Third condition are meet with requirement so grade of the steel is 8.");
             }
-            else if (input_Hardness > 50 || input_Carbon < 0.7 || input_TensileStrength > 5600)
-            {
-                /* Comparing any one conditon to be true for the grade 6 */
-                printf("Only 1 conditon are meet with the requirement so grade of the steel is 6");
-            }
-                else 
+                else if (input_Hardness > 50 && input_TensileStrength > 5600)
                 {
-                /* None of the condition met with requirement then Grade of Steel is 5 */
-                printf("None of the conditon are meet with requirement so grade of the steel is 5.");
+                    /* Comparing 1st and 3rd conditio for grade 7 */
+                    printf("First and Third condition are meet with requirement so grade of the steel is 7.");
                 }
+                    else if (input_Hardness > 50 || input_Carbon < 0.7 || input_TensileStrength > 5600)
+                    {
+                        /* Comparing any one conditon to be true for the grade 6 */
+                        printf("Only 1 conditon are meet with the requirement so grade of the steel is 6");
+                    }
+                        else 
+                        {  
+                            /* None of the condition met with requirement then Grade of Steel is 5 */
+                            printf("None of the conditon are meet with requirement so grade of the steel is 5.");
+                        }
 
     return 0;
     }
+
+
+
+(d) The Body Mass Index (BMI) is defined as ratio of the weight of a person (in kilograms) to the square of the height (in meters). Write a c program that receives weight and height, calculates the BMI, and reports the BMI category as per the following table: 
+BMI Categary            BMI
+Starvation              <15
+Anorexic                15.1 to 17.5
+Underweight             17.6 to 18.5
+Ideal                   18.6 to 24.9
+Overweight              25   to 25.9
+Obese                   30   to 30.9
+Morbidly Obese          >= 40
