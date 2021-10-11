@@ -251,7 +251,6 @@ program:
 (b) In digital world colors are specified in Red-Green-Blue (RGB) format, with values
     or R, G, B varying on an integer scale from 0 to 255. In print publishing the colors are mentioned in Cyan-Magent-Yellow-Black (CMYK) format, with values of C,
     M, Y, and K varying on a real scale from 0.0 to 1.0. Write a program that converts RGB color to CMYK color as per following formula.
-
     While = Max(Red/255, Green/255, Blue/255)
     Cyan = (White-Red/255)/(White)
     Magenta = (White-Green/255)/(White)
@@ -320,3 +319,56 @@ program:
     Grade is 6 if and only one conditions is met
     Grade is 5 is none of the conditions are met
     Write a c program, which will require the user to give value of hardness, carbon content and tensile strength of the steel under consideration and output the grade of the steel. 
+
+
+
+    # include <stdio.h>
+
+    int main()
+    {  
+    int input_Hardness, input_TensileStrength;                /* Initialise Variable */
+    float input_Carbon;
+    
+    printf("Enter Hardness of the Steel: ");                  /* Message for user */
+    scanf("%d",&input_Hardness);                              /* Taking input from user */
+
+    printf("Enter Carbon Content of the Steel: ");           /* Message for user */
+    scanf("%f",&input_Carbon);                               /* Taking input from user */
+
+    printf("Enter Tensile Strength of the Steel: ");         /* Message for user */
+    scanf("%d",&input_TensileStrength);                      /* Taking input from user */
+
+
+    if (input_Hardness > 50 && input_Carbon < 0.7 && input_TensileStrength > 5600 )
+    {
+        /* Comparing all three condition for Grade 10 */
+        printf("All three condition are meet with requirement so Grade of the steel is 10.");
+    }
+        else if (input_Hardness > 50 && input_Carbon < 0.7)
+        {
+            /* Comparing first 2 conditions for Grade 9 */
+        printf("First Two Conditon are meet with requirement so grade of the steel is 9.");
+        }
+        else if (input_Carbon < 0.7 && input_TensileStrength > 5600)
+        {
+            /* Comparing 2nd and 3rd condition for Grade 8 */
+            printf("Second and Third condition are meet with requirement so grade of the steel is 8.");
+        }
+            else if (input_Hardness > 50 && input_TensileStrength > 5600)
+            {
+            /* Comparing 1st and 3rd conditio for grade 7 */
+            printf("First and Third condition are meet with requirement so grade of the steel is 7.");
+            }
+            else if (input_Hardness > 50 || input_Carbon < 0.7 || input_TensileStrength > 5600)
+            {
+                /* Comparing any one conditon to be true for the grade 6 */
+                printf("Only 1 conditon are meet with the requirement so grade of the steel is 6");
+            }
+                else 
+                {
+                /* None of the condition met with requirement then Grade of Steel is 5 */
+                printf("None of the conditon are meet with requirement so grade of the steel is 5.");
+                }
+
+    return 0;
+    }
