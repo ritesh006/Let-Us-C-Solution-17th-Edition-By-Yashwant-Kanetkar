@@ -309,7 +309,6 @@ program:
 
 
 (c) A certain grade of steel is graded according to the following conditions:
-
     Hardness must be greater than 50
     Carbon content must be less than 0.7
     Tensile strength must be greater than 5600
@@ -320,5 +319,4 @@ program:
     Grade is 7 if conditions (i) and (iii) are met
     Grade is 6 if and only one conditions is met
     Grade is 5 is none of the conditions are met
-
     Write a c program, which will require the user to give value of hardness, carbon content and tensile strength of the steel under consideration and output the grade of the steel. 
