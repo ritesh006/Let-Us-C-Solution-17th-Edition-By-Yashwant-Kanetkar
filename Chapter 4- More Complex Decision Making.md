@@ -479,4 +479,154 @@ Morbidly Obese          >= 40
 
 
 (b) Write a program using conditional operators to determine whether a year entered 
-    through the keyboard is a special symbol or not.
+    through the keyboard is a leap year or not.
+
+
+    # include <stdio.h>
+
+    int main()
+    {    
+    int input_year;       /* Initialise Variable */
+    printf("Enter Year: ");               /* Message for user */
+    scanf("%d",&input_year);             /* taking Input from user */
+
+    if (input_year % 400 == 0)          /* Leap year if year perfectly devisible by 4 */
+    {
+        printf("Year %d is a Leap Year.",input_year); 
+    }
+        else if (input_year % 4 == 0 && input_year % 100 != 0) 
+        {
+            /* leap year if perfectly devisible 4 and not divisible by 100 */
+            printf("Year %d is Leap Year",input_year);
+        }
+            else
+            {
+                printf("Year %d is Not a Leap Year",input_year);
+            }
+
+
+
+    return 0;
+    }
+
+
+(c) Write a program to find the greatest of the three numbers entered through the 
+    keyboard. Use conditional operators.
+
+    # include <stdio.h>
+
+    int main()
+    {    
+    /* Initialise variable */
+    int input_Num1, input_Num2, input_Num3;
+
+    /* Message for user */
+    printf("Enter First Num: ");
+    /* Taking input from user */
+    scanf("%d",&input_Num1);  
+
+    /* Message for user */
+    printf("Enter Second Num: ");
+    /* Taking input from user */
+    scanf("%d",&input_Num2);  
+
+    /* Message for user */
+    printf("Enter Third Num: ");
+    /* Taking input from user */
+    scanf("%d",&input_Num3);  
+
+    
+        /* if first number is greater than second and second number greater then third 
+        number and first number is greater than third number */  
+    if(input_Num1 > input_Num2 && input_Num2 > input_Num3 && input_Num1 > input_Num3)
+    {
+        printf("First is Greater than Other");
+    }
+        else if(input_Num2 > input_Num1 && input_Num1 > input_Num3 && input_Num2 > input_Num3)
+        {
+            printf("Second is Greater than Other");
+        }
+            else if(input_Num3 > input_Num2 && input_Num2 > input_Num1 && input_Num3 > input_Num1)
+            {
+                printf("Third is Greater than Other");
+            }
+
+
+    return 0;
+}
+
+
+(d) Write a program to receive value of an angle in degrees and check whether sum
+    of squares of sine and cosine of this angle is equal to 1.
+
+
+    # include <stdio.h>
+    # include <math.h>
+
+    int main()
+    {    
+    /* Initialise variable */
+    int input_Degree, result;
+
+    printf("Enter Value of Angle in Degree: ");
+    scanf("%d",&input_Degree);
+
+    result = (sin(input_Degree)*sin(input_Degree)+ cosine(input_Degree)*cosine(input_Degree));
+        /* Calculating square of sin(angle in degree) sumation 
+        with square of cosine(angle in degree) */
+
+    if (result == 1)
+    {
+        printf("Angle is Equal to 1.");
+    }
+        else
+        {
+            printf("Angle is Not Equal to 1.");
+        }
+        
+    return 0;
+    }
+
+
+
+(e) Rewrite the following program using conditional operators.
+
+    # include <stdio.h>
+    int main()
+    {
+        float sal;
+
+        printf("Enter the salary");
+        scanf("%d",&sal);
+
+        if(sal>=25000 && sal<=40000>)
+        {
+            printf("Manager\n");
+        }
+        else
+            if (sal>=15000 && sal<25000)
+            {
+                printf("Accountant\n");
+            }
+                else
+                {
+                    print("Clerk\n");
+                }
+
+
+        return 0;
+    }
+
+# solution : 
+    # include <stdio.h>
+    int main()
+    {
+    float sal;
+
+    printf("Enter the salary: ");
+    scanf("%f",&sal);
+
+    sal >= 25000 ? (sal <= 40000 ? printf("Manager") : printf("Clerk")) :( sal >=15000 ? (sal<25000 ? printf("Accountant") : printf("cleark") ) :printf("cleark") );
+
+            return 0;
+    }
