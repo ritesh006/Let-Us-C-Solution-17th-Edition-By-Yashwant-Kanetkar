@@ -3,7 +3,7 @@
 
 Expression                          Value
 
-a != 6 && b > 5                        1
+a != 6 && b > 5                        1 <br>
 a == 9 || b < 3                        0
 ! ( a < 10 )                           1
 ! ( a > 5 && c )                       1
