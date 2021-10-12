@@ -18,7 +18,6 @@ eLearning = Invalid constant beacause its not single digit
 
 |    |    |
 | ----------- | ----------- |
-| 
 B'day       = invald quote not allowed 
 int         = invalid int is data type 
 $hello      = invalid special charactor not allowed 
