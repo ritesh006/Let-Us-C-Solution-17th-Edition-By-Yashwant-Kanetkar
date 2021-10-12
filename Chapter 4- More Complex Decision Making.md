@@ -3,12 +3,20 @@
 |Expression             | Value |
 | -----------           | ----------- |
 | a != 6 && b > 5       | 1       |
-| a == 9 or b < 3       | 0       |
-|! ( a < 10 )           | 1       |
-|! ( a > 5 && c )       | 1        | 
-| 5 && c != 8 or !c     | 1       |    
+| a == 9 or b < 3       |        |
+|! ( a < 10 )           |       |
+|! ( a > 5 && c )       |         | 
+| 5 && c != 8 or !c     |       |    
 
+Answer :
 
+|Expression             | Value |
+| -----------           | ----------- |
+| a != 6 && b > 5       | 1       |
+| a == 9 or b < 3       |   0     |
+|! ( a < 10 )           |    1   |
+|! ( a > 5 && c )       |    0     | 
+| 5 && c != 8 or !c     |    1   |  
 # [B] What will be the output of the following programs:
 
 
