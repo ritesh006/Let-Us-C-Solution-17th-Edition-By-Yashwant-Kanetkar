@@ -1,15 +1,12 @@
 # [A] If a = 10, b = 12, c = 0, find the values of the expressions in the           following  table:
 
-
-Expression                          Value
-
-a != 6 && b > 5                        1 <br>
-a == 9 || b < 3                        0
-! ( a < 10 )                           1
-! ( a > 5 && c )                       1
-5 && c != 8 || !c                      1
-
-
+|Expression             | Value |
+| -----------           | ----------- |
+| a != 6 && b > 5       | 1       |
+| a == 9 or b < 3       | 0       |
+|! ( a < 10 )           | 1       |
+|! ( a > 5 && c )       | 1        | 
+| 5 && c != 8 or !c     | 1       |    
 
 
 # [B] What will be the output of the following programs:
@@ -100,8 +97,9 @@ OUTPUT: 30
 # [C] Point out the errors if any. in the following programs:
 
 (a)
-    #include<stdio.h>
-    int main()
+        
+        #include<stdio.h>
+        int main()
     {
         char spy='a', password='z';
         if (spy=='a' or password=='z')
@@ -113,7 +111,8 @@ Ans: Logical OR use as (||) this not (or) like this.
 
 
 (b) 
-    # include <stdio.h>
+    
+    #include<stdio.h>
     int main( )
     {
         int i = 10, j = 20 ;
@@ -126,6 +125,7 @@ Ans: Double if is not allowed in single row.
 
 
 (c)
+    
     # include <stdio.h>
     int main( )
     {
@@ -139,6 +139,7 @@ Ans: Logical AND use as (&&) this not (and) like this.
 
 
 (d)
+    
     # include <stdio.h>
     int main( )
     {
@@ -154,6 +155,7 @@ Ans: Termination Semicoln ; not allowed in if statement.
 
 
 (e)
+    
     # include <stdio.h>
     int main( )
     {
@@ -166,6 +168,7 @@ Ans: No Error
 
 
 (f)
+    
     # include <stdio.h>
     int main( )
     {
@@ -179,6 +182,7 @@ Ans: paranthesis required (j = 10) and (j = 15)
 
 
 (g)
+    
     # include <stdio.h>
     int main( )
     {
@@ -191,6 +195,7 @@ Ans: Second condition after : this not written
 
 
 (h)
+    
     # include <stdio.h>
     int main( )
     {
