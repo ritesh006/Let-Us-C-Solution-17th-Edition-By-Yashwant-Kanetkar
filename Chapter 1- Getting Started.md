@@ -1,7 +1,10 @@
 # [A] Which of following is invalid C constant and why?
 
-'3.15' = invalid constant decimal point available 
-35,550 = invalid constant comm is available  
+| Syntax      |  |
+| ----------- | ----------- |
+|
+|'3.15' = invalid constant decimal point available |
+|35,550 = invalid constant comm is available | 
 3.25e2 = valid constant  
 2e-3 = valid constant. 
 eLearning = Invalid constant beacause its not single digit 
@@ -13,6 +16,9 @@ eLearning = Invalid constant beacause its not single digit
 
 # [B] Which of the following are invalid variable names and why?
 
+|    |    |
+| ----------- | ----------- |
+| 
 B'day       = invald quote not allowed 
 int         = invalid int is data type 
 $hello      = invalid special charactor not allowed 
@@ -32,6 +38,8 @@ salary      = valid
 
 # [C] State whether the following statements are True or False:
 
+|   |   |
+|----|-----|
 (a) T 
 (b) T 
 (c) T 
@@ -48,19 +56,22 @@ salary      = valid
 
 # [D] Match the Following:
 
-(a)\n 	            Escape sequence
-(b)3.145	        Real constant
-(c)-6513	        Integer constant
-(d) ’D’	            Character constant
-(e) 4.25e-3	        Exponential form
-(f) main( )	        Function
-(g) %f, %d, %c	    Format specifier
+
+|    |  |
+| ----------- | ----------- |
+(a)\n 	       -     Escape sequence
+(b)3.145	   -     Real constant
+(c)-6513	   -     Integer constant
+(d) ’D’	       -     Character constant
+(e) 4.25e-3	    -    Exponential form
+(f) main( )	    -    Function
+(g) %f, %d, %c-	    Format specifier
 (h) ;	            Statement terminator
-(i) Constant	    Literal
-(j) Variable	    Identifier
-(k) &	            Address of operator
-(l) printf( )	    Output function
-(m) scanf( )	    Input function
+(i) Constant-	    Literal
+(j) Variable	-    Identifier
+(k) &	         -   Address of operator
+(l) printf( )	  -  Output function
+(m) scanf( )	 -   Input function
 
 
 # [E] Point out errors, if any, in the following programs:
