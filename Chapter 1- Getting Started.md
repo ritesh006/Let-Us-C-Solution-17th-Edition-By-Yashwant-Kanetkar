@@ -1,10 +1,10 @@
 # [A] Which of following is invalid C constant and why?
 
-| Syntax      |  |
+|             |             |
 | ----------- | ----------- |
-|
-|'3.15' = invalid constant decimal point available |
-|35,550 = invalid constant comm is available | 
+|             |             |
+'3.15' = invalid constant decimal point available 
+35,550 = invalid constant comm is available 
 3.25e2 = valid constant  
 2e-3 = valid constant. 
 eLearning = Invalid constant beacause its not single digit 
