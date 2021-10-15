@@ -156,4 +156,120 @@ Answer: No output. Since a float variable is compared with double constant, the 
     - After the person picks, the computer does its picking.
     - Whoever is forced to pick up the last matchstick loses the game. 
 
+
+
+    # include <stdio.h>
+    int main()
+    {
+        int input_user, total_matchstick=21, input_computer;
+
+    while (total_matchstick != 0)
+    {
+        printf("Total Match Sticks: %d\n", total_matchstick);
+        printf("Pick Matchstick 1, 2, 3 or 4: ");
+        scanf("%d",&input_user);
+
+        if(input_user > 4)
+        {
+            printf("Invalid Entry");
+            break;
+        }
+        /* for computer choice we are taking maximum value by which
+          we can get the max possible value of sticks which is 5 */
+        input_computer = 5 - input_user;
+        
+        /* with the help of this code we will take only 4 rounds to 
+            decide that user loses the match. */
+        
+        printf("Computer picks up the %d match sticks.\n", input_computer);
+        total_matchstick = total_matchstick - input_user - input_computer;
+        
+        if(total_matchstick == 1)
+        {
+            printf("\nYou have been lost via computer.");
+            break;
+        }
+    }
+        return 0;
+    }
+
+
+
+(d) Write a program to enter numbers till the user wants. At the end it should 
+    display the count of positive, negative and zeros entered.
+
+
+    #include<stdio.h>
+    int main()
+    {
+        int inputNum, positive=0, negative=0, zeroes=0;
+    char inputChoice;
+
+    while(1)  /* for infinit loop */
+    {
+        printf("Enter number: ");
+        scanf("%d",&inputNum);
+
+        printf("Do you want to continue (press y/n): ");
+        scanf(" %c",&inputChoice);  /* add blank place before %c other wise scanf
+        function did not work */
+
+        if(inputNum > 0)
+        {
+            positive++;  /* increment if positive */
+        }
+
+            if(inputNum < 0)
+            {
+                negative++; /* increment if negative */
+            }
+                if(inputNum == 0)
+                {
+                    zeroes++;       /* increment if zero */
+                }
+
+        if(inputChoice== 'n' || inputChoice == 'N')     /* if choice is n then break loop */
+        {
+            printf("Total Positive: %d\n",positive);
+            printf("Total Negative: %d\n",negative);
+            printf("Total Zeroes: %d\n",zeroes);
+            break;    
+        }
+            if(inputChoice == 'y' || inputChoice =='Y')/* if input y continue loop */
+                continue;
+
+    }
+         return 0;
+    }
+
+
+
+
+(e) Write a program to receive an integer and find its octal equivalent. 
+    (Hint: To obtain octal equivalaent of an integer, divide it continuously
+    by 8 till dividend doesn't become zero, then write the remainders obtained
+    in reverse direction.)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(f) Write a program to find a range of a set of numbers entered through the keyboard.
+    Range is the difference between the smallest and biggest number in the list.
+
+
+
+
+
+
     
+
